@@ -5,7 +5,7 @@ import {
     RiBriefcase4Line, RiBriefcase4Fill,
     RiChatSettingsLine, RiChatSettingsFill,
     RiShieldCheckLine, RiShieldCheckFill,
-    RiCloseFill, RiMoreFill
+    RiCloseFill, RiMoreFill, RiUserHeartFill, RiUserHeartLine, RiCalendarEventLine, RiCalendarEventFill, RiMapPin2Fill, RiMapPin2Line
 } from 'react-icons/ri'
 import Link from 'next/link'
 import { Box } from '@chakra-ui/react'
@@ -27,16 +27,16 @@ const BottomNav = props => {
 
         switch (activeTabs) {
             case '/':
-                // router.push('/')
+                router.push('#')
                 break;
-            case '/our-products':
-                // router.push('/our-products')
+            case '/mempelai':
+                router.push('#mempelai')
                 break;
-            case '/our-services':
-                // router.push('/our-services')
+            case '/countdown':
+                router.push('#countdown')
                 break;
-            case '/our-projects':
-                // router.push('/our-projects')
+            case '/informasi_acara':
+                router.push('#informasi_acara')
                 break;
         }
     }, [activeTabs]);
@@ -51,77 +51,69 @@ const BottomNav = props => {
                                 size='25'
                                 color='#8e6144'
                             />
-                            <div className='bnTabTitle-me' style={{ color: '#8e6144' }}>Home</div>
                         </div> :
                         <div className="bnTabWarper-me">
                             <RiHomeSmile2Line
                                 size='25'
                                 color='#000'
                             />
-                            <div className='bnTabTitle-me'>Home</div>
                         </div>
                 }
             </div>
             <div className="bnTab-me"
-                onClick={() => setActiveTabs('/our-products')}>
+                onClick={() => setActiveTabs('/mempelai')}>
                 {
-                    activeTabs === '/our-products' ?
+                    activeTabs === '/mempelai' ?
                         <div className="bnTabWarper-me">
-                            <RiBriefcase4Fill
+                            <RiUserHeartFill
                                 size='25'
                                 color='#8e6144'
                             />
-                            <div className='bnTabTitle-me' style={{ color: '#8e6144' }}>Products</div>
                         </div> :
                         <div className="bnTabWarper-me">
-                            <RiBriefcase4Line
+                            <RiUserHeartLine
                                 size='25'
                                 color='#000'
                             />
-                            <div className='bnTabTitle-me'>Products</div>
                         </div>
                 }
             </div>
             <div className="bnTab-me"
-                onClick={() => setActiveTabs('/our-services')}>
+                onClick={() => setActiveTabs('/countdown')}>
                 {
-                    activeTabs === '/our-services' ?
+                    activeTabs === '/countdown' ?
                         <div className="bnTabWarper-me">
-                            <RiChatSettingsFill
+                            <RiCalendarEventFill
                                 size='25'
                                 color='#8e6144'
                             />
-                            <div className='bnTabTitle-me' style={{ color: '#8e6144' }}>Services</div>
                         </div> :
                         <div className="bnTabWarper-me"
                         >
-                            <RiChatSettingsLine
+                            <RiCalendarEventLine
                                 size='25'
                                 color='#000'
                             />
-                            <div className='bnTabTitle-me'>Services</div>
                         </div>
                 }
             </div>
             <div className="bnTab-me"
-                onClick={() => setActiveTabs('/our-projects')}>
+                onClick={() => setActiveTabs('/informasi_acara')}>
                 {
-                    activeTabs === '/our-projects' ?
+                    activeTabs === '/informasi_acara' ?
                         <div className="bnTabWarper-me"
                         >
-                            <RiShieldCheckFill
+                            <RiMapPin2Fill
                                 size='25'
                                 color='#8e6144'
                             />
-                            <div className='bnTabTitle-me' style={{ color: '#8e6144' }}>Projects</div>
                         </div> :
                         <div className="bnTabWarper-me"
                         >
-                            <RiShieldCheckLine
+                            <RiMapPin2Line
                                 size='25'
                                 color='#000'
                             />
-                            <div className='bnTabTitle-me'>Projects</div>
                         </div>
                 }
             </div>

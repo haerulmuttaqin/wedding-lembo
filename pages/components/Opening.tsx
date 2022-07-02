@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Flipped, Flipper } from 'react-flip-toolkit'
-import BottomNav from './__components/BottomNav';
+import BottomNav from './BottomNav';
 import { Box, Button, Center, Container } from '@chakra-ui/react';
 import Content from './Content';
 

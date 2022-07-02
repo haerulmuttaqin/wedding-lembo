@@ -1,7 +1,7 @@
 import { Box, Center } from '@chakra-ui/react'
 import React from 'react'
 import Link from 'next/link'
-import { useCountdown } from './useCountdown';
+import useCountdown from './useCountdown';
 
 export default function Content() {
 
@@ -50,7 +50,6 @@ export default function Content() {
                     <div className="orn orn-header-bottom-left aos-init" data-aos="fade-right"></div>
                 </section>
 
-
                 <section className="batas-header text-white text-center bg-warna-2 w-100 py-3 pt-4" id="section_batas_header">
                     <p className="font-hello fs-2 mb-0 text-white aos-init aos-animate" data-aos="fade-up">
 
@@ -60,7 +59,8 @@ export default function Content() {
                     </Box>
                 </section>
 
-                <section className="mempelai" id="section_mempelai">
+                <section className="mempelai" id="mempelai">
+                    <br /><br />
                     <div className="container mt-5">
                         <p className="text-center fs-1 title font-hello">Calon Pengantin</p>
                         <p className="text-center mx-3 mb-5"></p>
@@ -96,7 +96,7 @@ export default function Content() {
                     </div>
                 </section>
 
-                <section className="countdown" id="section_countdown" style={{ background: '#faad15' }}>
+                <section className="countdown" id="countdown" style={{ background: '#faad15' }}>
                     <Box className="position-relative">
                         <div className="overlay-countdown-1"></div>
                         <div className="overlay-countdown-2"></div>
@@ -158,9 +158,9 @@ export default function Content() {
                                 </div>
                             </div>
                             <Box className="text-center mt-5 aos-init aos-animate" data-aos="zoom-out" zIndex={99999}>
-                                <a href="https://www.google.com/calendar/event?action=TEMPLATE&amp;text=Lembo+%26+Ani&amp;details=Lembo+%26+Ani&amp;location=Kp.serang RT.002/001 Ds.Serang Kec.cikarang selatan (Belakang pasar serang)&amp;dates=20220723T120000/20220723T170000&amp;ctz=Asia%2FJakarta" className="btn btn-warna-2" target="_blank">
+                                <Link href="https://www.google.com/calendar/event?action=TEMPLATE&amp;text=Lembo+%26+Ani&amp;details=Lembo+%26+Ani&amp;location=Kp.serang RT.002/001 Ds.Serang Kec.cikarang selatan (Belakang pasar serang)&amp;dates=20220723T120000/20220723T170000&amp;ctz=Asia%2FJakarta" className="btn btn-warna-2" target="_blank" rel="noreferrer">
                                     Tambah ke Kalender
-                                </a>
+                                </Link>
                             </Box>
                             <br />
                             <Center>
@@ -174,9 +174,7 @@ export default function Content() {
                 </section>
 
 
-
-
-                <section className="informasi_acara position-relative" id="section_informasi_acara">
+                <section className="informasi_acara position-relative" id="informasi_acara">
                     <div className="paper-informasi-acara"></div>
                     <div className="background-informasi-acara" style={{ backgroundImage: 'url(opening.jpeg)' }}>
                         <div className="overlay-informasi-acara"></div>
