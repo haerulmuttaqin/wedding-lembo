@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "noImplicitAny": false,
+        "incremental": true
+    },
+    "include": [
+        "css-loader",
+        "next-env.d.ts",
+        "twin.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "src/pages/auth/auth.tsx",
+        "src/pages/auth/register.jsx",
+        "additional.d.ts",
+        "app/theme/index.tsx",
+        "app/api/fetch/fetchWrapper.jsx",
+        "**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

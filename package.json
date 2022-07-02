@@ -1,0 +1,44 @@
+{
+  "name": "compro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export && next-image-export-optimizer",
+    "start": "next build && next start -p 3002",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "add": "^2.0.6",
+    "aos": "^3.0.0-beta.6",
+    "babel": "^6.23.0",
+    "framer-motion": "^6.3.16",
+    "http": "^0.0.1-security",
+    "jquery": "^3.6.0",
+    "next": "12.1.6",
+    "next-image-export-optimizer": "^0.10.1",
+    "next-link": "^2.0.0",
+    "react": "18.1.0",
+    "react-alice-carousel": "^2.6.1",
+    "react-comments-section": "^2.0.10",
+    "react-dom": "18.1.0",
+    "react-flip-toolkit": "^7.0.14",
+    "react-grid-system": "^8.1.5",
+    "react-icons": "^4.4.0",
+    "react-modal-video": "^1.2.8",
+    "sass": "^1.53.0",
+    "url": "^0.11.0",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "@types/react": "^18.0.9",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "typescript": "^4.7.2"
+  }
+}
